@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+</head>
+<body>
+
+	<a class="name" href="http://127.0.0.1:5000/">M͟͟͟͞͞͞y͟͟͟͞͞͞ F͟͟͟͞͞͞i͟͟͟͞͞͞r͟͟͟͞͞͞s͟͟͟͞͞͞t͟͟͟͞͞͞ P͟͟͟͞͞͞r͟͟͟͞͞͞o͟͟͟͞͞͞j͟͟͟͞͞͞e͟͟͟͞͞͞c͟͟͟͞͞͞t͟͟͟͞͞͞</a>
+	<a href="http://127.0.0.1:5000/teach" class="teach">𝙏𝙚𝙖𝙘𝙝</a>
+	<a href="http://127.0.0.1:5000/login" class="login_button">login</a>
+
+		<header class="border"></header>
+
+		<a href="http://127.0.0.1:5000/login">
+			<img class="login_ico" src="http://icons.iconarchive.com/icons/icons8/windows-8/512/Users-Administrator-2-icon.png">
+		</a>
+	<!-- action = Адрес на который будет отправлен запрос -->
+	
+	<login class="t_login">𝐋𝐨𝐠𝐢𝐧</login>
+	<pass class="t_password">𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐝</pass>
+
+	<form method="POST" autocomplete="off" action="/login">
+		<input class="login" name="login"/>
+		<input class="password" type="password" name="password"/>
+		<input class="auth" type="submit" value="Войти"  />
+	</form>
+	<log class="color_green"> {{ login }} </log>
+
+</body>
+</html>
